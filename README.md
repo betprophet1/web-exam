@@ -43,3 +43,27 @@ Issue: Parent @input doesn’t fire.
 <!-- BaseInput.vue -->
 <input v-bind="$attrs">
 ```
+
+# Coding Exam
+
+### Debounce function
+1. The debounced function should:
+  a. Wait until no calls happen for `delay` ms, then run fn.
+  b. If called again before `delay` ends, reset the timer.
+2. Must preserve the `this` context and arguments when executing `fn`.
+
+```
+function searchQuery(q) {
+  console.log("Searching for:", q);
+}
+
+const debouncedSearch = debounce(searchQuery, 500);
+
+// Simulate rapid calls
+debouncedSearch("a");
+debouncedSearch("ab");
+debouncedSearch("abc");
+
+// Expected behavior: Only logs once after 500ms:
+// "Searching for: abc"
+```
