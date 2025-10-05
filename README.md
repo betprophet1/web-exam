@@ -67,3 +67,33 @@ debouncedSearch("abc");
 // Expected behavior: Only logs once after 500ms:
 // "Searching for: abc"
 ```
+
+
+### Group Data By Key
+- Accepts an array of objects.
+- Groups items by the given property name.
+- Returns an object where each key is the property value, and each value is an array of items.
+
+```
+const data = [
+  { name: "Alice", role: "admin" },
+  { name: "Bob", role: "user" },
+  { name: "Charlie", role: "admin" },
+  { name: "David", role: "user" }
+];
+
+const result = groupBy(data, "role");
+
+console.log(result);
+// Expected output:
+// {
+//   admin: [
+//     { name: "Alice", role: "admin" },
+//     { name: "Charlie", role: "admin" }
+//   ],
+//   user: [
+//     { name: "Bob", role: "user" },
+//     { name: "David", role: "user" }
+//   ]
+// }
+```
