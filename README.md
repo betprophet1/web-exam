@@ -48,8 +48,8 @@ Issue: Parent @input doesn’t fire.
 
 ### Debounce function
 - The debounced function should:
--- Wait until no calls happen for `delay` ms, then run fn.
--- If called again before `delay` ends, reset the timer.
+    - Wait until no calls happen for `delay` ms, then run fn.
+    - If called again before `delay` ends, reset the timer.
 - Must preserve the `this` context and arguments when executing `fn`.
 
 ```
