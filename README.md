@@ -46,7 +46,7 @@ Issue: Parent @input doesn’t fire.
 
 # Coding Exam
 
-### Debounce function
+### Debounce function - 15 mins
 - The debounced function should:
     - Wait until no calls happen for `delay` ms, then run fn.
     - If called again before `delay` ends, reset the timer.
@@ -69,7 +69,7 @@ debouncedSearch("abc");
 ```
 
 
-### Group Data By Key
+### Group Data By Key - 15 mins
 - Accepts an array of objects.
 - Groups items by the given property name.
 - Returns an object where each key is the property value, and each value is an array of items.
