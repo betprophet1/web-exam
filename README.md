@@ -47,10 +47,10 @@ Issue: Parent @input doesn’t fire.
 # Coding Exam
 
 ### Debounce function
-1. The debounced function should:
-  a. Wait until no calls happen for `delay` ms, then run fn.
-  b. If called again before `delay` ends, reset the timer.
-2. Must preserve the `this` context and arguments when executing `fn`.
+- The debounced function should:
+-- Wait until no calls happen for `delay` ms, then run fn.
+-- If called again before `delay` ends, reset the timer.
+- Must preserve the `this` context and arguments when executing `fn`.
 
 ```
 function searchQuery(q) {
