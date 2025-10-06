@@ -1,7 +1,5 @@
 # Mini Debug - 15 to 20 mins
-
-### Object/array reactivity 
-Issue: Not reactive (new key + index set).
+![Alt text](/img/1.png)
 
 ```
 data() { 
