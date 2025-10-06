@@ -1,46 +1,16 @@
 # Mini Debug - 15 to 20 mins
+
+### Object/array reactivity 
 ![Alt text](/img/1.png)
 
-```
-data() { 
-  return { 
-    profile: { 
-      name: 'A'
-    }, 
-    items: ['a','b'] 
-  } 
-}
-// later:
-this.profile.age = 30
-this.items[2] = 'x'
-```
-
 ### Prop mutation 
-Issue: Mutating prop directly.
-
-```
-props: { value: Boolean }
-methods: {
-  toggle() { this.value = !this.value }
-}
-```
+![Alt text](/img/2.png)
 
 ### Watcher not firing on nested change
-Issue: Shallow watch.
-
-```
-watch: {
-  options(val) { /*...*/ } // expects deep nested changes
-}
-```
+![Alt text](/img/3.png)
 
 ### Forwarding listeners/attrs in base component 
-Issue: Parent @input doesn’t fire.
-
-```
-<!-- BaseInput.vue -->
-<input v-bind="$attrs">
-```
+![Alt text](/img/4.png)
 
 # Coding Exam
 
